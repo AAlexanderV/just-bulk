@@ -6,6 +6,16 @@
     background-color: #96cafb;
 }
 
+.about_text{
+
+}
+
+.about_text h3{
+    text-align: center;
+}
+
+
+
 /* CONTACTS */
 .contacts{
     flex-direction: column;
