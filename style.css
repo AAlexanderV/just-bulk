@@ -138,6 +138,7 @@ nav{
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .about_icon_item{
