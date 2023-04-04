@@ -16,22 +16,27 @@
     <div class="main">
         <div class="header">
             <div class="logo"><span>Just <span class="logo_blue">Bulk</span></span> <br> DMCC</div>
-            <nav>
+            <nav class="nav_menu">
                 <a href="/" class="nav_link">Home</a>
                 <a href="about-us.html" class="nav_link">About us</a>
                 <a href="services.html" class="nav_link">Services</a>
-                <a href="/" class="nav_link">Contact us</a>
+                <a href="contact-us.html" class="nav_link">Contact us</a>
             </nav>
+
+            <!-- burger menu buttom -->
+            <div class="nav_burger">
+                <span class="burger_item"></span>
+            </div>
+
         </div>
     </div>
 
     <!-- ABOUT -->
     <div class="about">
-        <div class="about_header"><span>A</span>bout us</div>
-        <h1>&#9875;</h1>
+        <div class="section_header"><span>A</span>bout us</div>
 
         <div class="about_text">
-            <h2>Welcome to JUST BULK DMCC!</h2>
+            <!-- <h2>Welcome to JUST BULK DMCC!</h2> -->
 
             <!-- <p>We are a shipping company with headquarters in ________, which offers full variety of dry bulk services
                 to
@@ -41,26 +46,16 @@
                 business
                 performance.</p> -->
 
-            <p>Since opening our doors, Just Bulk has been carrying out to coming up with services of the unmatched
+            <p>Since opening our doors, <span class="JB_name">JUST BULK</span> has been carrying out to coming up with
+                services of the
+                unmatched
                 quality, offering a high-quality service in a timely manner due to capable and independent decision
-                makers.</p>
+                makers. <a href="about-us.html" class="about_link">Read more...</a></p>
+
+
         </div>
 
         <div class="about_icons">
-            <!-- <div class="about_icon_item">
-                <div class="icon"><img src="./images/vessel-icon.bmp" alt="chartering icon"></div>
-                <div class="text">Chartering vessels from various owners and transporting cargo for customers worldwide.</div>
-            </div>
-
-            <div class="about_icon_item">
-                <div class="icon"><img src="./images/analytical-icon.bmp" alt="analytical icon"></div>
-                <div class="text">An analytical approach backed by in-house marked research and market knowledge</div>
-            </div>
-
-            <div class="about_icon_item">
-                <div class="icon"><img src="./images/database-icon.bmp" alt="database icon"></div>
-                <div class="text">The extensive database containing worldwide controlled tonnage</div>
-            </div> -->
             <div class="about_icon_item">
                 <div class="icon" style="background-image: url('./images/vessel-icon.bmp')"></div>
                 <div class="text"><span>Chartering vessels</span> from various Owners and transporting cargo for
@@ -79,58 +74,35 @@
 
             <div class="about_icon_item">
                 <div class="icon" style="background-image: url('./images/balance-icon.bmp')"></div>
-                <div class="text">With a team of highly experienced shipbrokers, we get the <span>extensive
-                        database</span> right vessel for the right price</div>
+                <div class="text">With a team of highly experienced shipbrokers, we get the <span>right vessel for the
+                        right price</span> </div>
             </div>
         </div>
-        <!-- <p>Welcome to JUST BULK DMCC! JUST BULK provides dry bulk shipping services for global coal, grain, iron ore and
-            fertilizer traders, end users and shippers. Our chartering activities cover spot and period chartering and
-            contracts of affreightment for charterers, operators and owners, handling both competitive and exclusive
-            business.
-            JB team has a dept market knowledge and chartered vessels to the international trading houses of dry bulk
-            commodities, world famous vessel operators that span across five continents. We make management of the
-            entire supply chain from origin to destination.
-        </p>
-        <p>Next to our direct dry bulk chartering services, we offer a wide array of vessel brokerage services for all
-            your bulk cargo needs around the globe. JUST BULK can offer full market information on the dry bulk
-            chartering market with background information due to their extensive database containing world wide
-            controlled tonnage.
-        </p>
-        <p>Also supportive to the traditional shipbroking services we are affording free research services to our
-            clients, taking into account the shipowners viewpoint choosing the right vessels for the certain cargoes and
-            trades, as well as all the special requirements of the different commodities to be transported. With quality
-            maintenance programmes in place, we warrant that our customers achieve their business goals.
-        </p> -->
     </div>
 
     <!-- SERVICES -->
     <div class="services" id="services">
-        <div class="services_header"><span>S</span>ervices</div>
+        <div class="section_header"><span>S</span>ervices</div>
 
         <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="services_img"><a href=""><img src="./images/bulker-sunset.jpg" alt=""></a></div>
+                    <div class="services_img"><a href="services.html"><img src="./images/bulker-sunset.jpg" alt=""></a>
+                    </div>
                     <h1>Brokerage</h1>
                     <p>The extensive database containing worldwide controlled tonnage</p>
                     <a href="services.html">Read More ...</a>
                 </div> <!-- 1 -->
 
                 <div class="swiper-slide">
-                    <div class="services_img"><a href=""><img src="./images/operations.jpg" alt=""></a></div>
-                    <h1>Operations</h1>
-                    <p>An analytical approach backed by in-house marked research and market knowledge</p>
-                    <a href="services.html">Read More ...</a>
-                </div> <!-- 2 -->
-
-                <div class="swiper-slide">
-                    <div class="services_img"><a href=""><img src="./images/bulker-fullsize.jpg" alt=""></a></div>
+                    <div class="services_img"><a href="services.html#chartering"><img src="./images/bulker-fullsize.jpg"
+                                alt=""></a></div>
                     <h1>Chartering</h1>
                     <p>Chartering vessels from various owners and transporting cargo for customers worldwide</p>
-                    <a href="services.html">Read More ...</a>
-                </div> <!-- 3 -->
+                    <a href="services.html#chartering">Read More ...</a>
+                </div> <!-- 2 -->
 
             </div> <!-- swiper-wrapper -->
 
@@ -145,26 +117,17 @@
 
     <!-- CONTACTS -->
     <footer class="contacts">
-        <div class="footer_container" id="contacts">
+        <!-- <div class="contacts_header"><span>C</span>ontacts</div> -->
 
-            <div class="footer_inner">
-                <div class="footer_contacts">
-                    <h1>Our Contacts</h1>
-                    <a href="">Jeddah, Saudi Arabia, some addresss</a>
-                    <a href="tel:+966321654987">Tel: +966-321654987</a>
-                    <a href="mailto:info@aaaa-aaaa.com">Email: info@aaa-aaaaa.com</a>
-                    <h3>Opening Hours</h3>
-                    <p>Mon-Friday: 10:00AM - 5:00PM</p>
-                </div>
+        <div class="contacts_content">
 
-            </div>
+            <a href="contact-us.html" class="address">321, Sheikh Mohammed bin Rashid Blvd, Dubai, 123 45, United Arab
+                Emirates</a>
+            <a href="tel:+971123456789">Tel: +971-123456789</a>
+            <a href="mailto:info@justbulkdmcc.com" class="email">Email: info@justbulkdmcc.com</a>
 
-            <div class="footer_bottom">
-                <div class="terms_privacy">
-                    <a href="">Terms & Conditions</a> - <a href="">Privacy Policy</a>
-                </div>
-                <div class="copyright">Copyright © 2023 Just Bulk DMCC. All rights reserved.</div>
-            </div>
+            <p>Opening Hours: Mon-Friday: 10:00 am - 5:00 pm</p>
+            <div class="copyright">Copyright © 2023 Just Bulk DMCC. All rights reserved.</div>
 
         </div>
     </footer>

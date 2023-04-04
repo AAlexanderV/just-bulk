@@ -1,139 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('./pages-styles/default.css');
 
-*, *:before, *:after {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #fff;
-    font-family: 'Lato', sans-serif;
-}
-
-.main, .about, .services, .contacts{
+.main,
+.about,
+.services,
+.contacts {
   width: 100%;
   display: flex;
 }
 
-.main{
+.main {
   height: 100vh;
+  min-height: 500px;
 
   background: no-repeat right url("./images//bulker-main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-.header{
-  width: 100%;
-  height: fit-content;
-  margin: 55px 10px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* ABOUT */
+.about {
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  padding: 30px 20px;
+
+  flex-direction: column;
   align-items: center;
 }
 
-.logo{
-  margin-left: 40px;
-  text-align: right;
-  user-select: none;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-}
-
-.logo span{
-  font-size: 60px;
-  font-weight: 900;
-  text-transform: uppercase;
-  /* font-style: italic; */
-}
-
-.logo_blue{
-  color: #47B5F6;
-}
-
-nav{
-  margin-right: 10px;
-}
-
-.nav_link{
-    margin-right: 35px;
-    text-decoration: none;
-    color: #F2F2F2;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    position: relative;
-    transition: all .3s linear;
-}
-
-.nav_link:hover{
-  color: #47B5F6;
-}
-
-.nav_link::after{
-  /* display: none; */
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left:0;
-  content: "";
-  height: 0;
-  width: 0;
-  
-  transition: width .2s linear;
-}
-
-.nav_link:hover::after{
-  /* display: block; */
-  width: 100%;
-  height: 1px;
-  border: 1px solid #47B5F6;
-}
-
-.about_header, .services_header {
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 45px;
-  font-family: 'Lato', sans-serif;
-  color: #016CBC;
-  font-weight: 600;
-  font-size: 36px;
-}
-
-.about_header span, .services_header span {
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-right: 3px;
-  color: #fff;
-  background: #016CBC;
-}
-
-.about{
-    height: fit-content;
-    padding: 30px 20px;
-    
-    flex-direction: column;
-    align-items: center;
-}
-
-.about *{
+.about * {
   max-width: 1200px;
 }
 
-.about p{
-  text-align: left;
-  margin: 0 20px;
+.about_text{
+  margin: 30px 0;
 }
 
-.about h2{
+.about p {
+  text-align: center;
+  margin: 0 20px;
+
+  line-height: 1.5;
+  font-size: 26px;
+  color: #616161;
+}
+
+.about a{
+  text-decoration: none;
+  color: #016cbc;
+  font-weight: 600;
+}
+.about a:hover{
+  opacity: .6;
+}
+
+.about p .JB_name {
+  color: #016cbc;
+  font-weight: 600;
+}
+
+.about h2 {
   text-align: center;
   margin: 20px 0 10px;
 }
 
-.about_icons{
+.about_icons {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -141,7 +73,7 @@ nav{
   justify-content: center;
 }
 
-.about_icon_item{
+.about_icon_item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,136 +81,127 @@ nav{
   margin: 0 12px;
 }
 
-.about_icon_item .icon{
+.about_icon_item .icon {
   width: 80px;
   aspect-ratio: 1/1;
   background-position: center;
   background-size: cover;
 }
-.icon img{
+.icon img {
   object-fit: cover;
   border-radius: 50%;
 }
-.about_icon_item .text{
+.about_icon_item .text {
   text-align: center;
 }
 
-.about_icon_item .text span{
-  color: #016CBC;
+.about_icon_item .text span {
+  color: #016cbc;
   font-weight: 700;
 }
 
-.contacts{
-    flex-direction: column;
-    align-items: center;
-
-    background-color: #016CBC;
-}
-
-
 /* SERVICES --> */
 .services {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
-    margin: 30px auto;
-    padding: 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  
-  .services .swiper {
-    width: 100%;
-    max-width: 1400px;
-    height: 600px;
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
-  }
-  
-  .services .swiper .swiper-slide {
-    height: 90%;
-    background-color: rgba(166, 208, 233, 0.1);
-    border-radius: 15px;
-  }
-  
-  .services .swiper .swiper-slide .services_img {
-    width: 100%;
-    height: 65%;
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
-  }
-  
-  .services .swiper .swiper-slide .services_img img {
-    width: 100%;
-    height: 100%;
-    /* border-radius: 20px 20px 0 0; */
-    border-radius: 20px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .services .swiper .swiper-slide .services_img a {
-    padding: 0;
-  }
-  
-  .services .swiper .swiper-slide .services_img:hover {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-    opacity: .5;
-  }
-  
-  .services .swiper .swiper-slide h6 {
-    color: #0D5697;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    padding-left: 30px;
-    margin-bottom: 15px;
-  }
-  
-  .services .swiper .swiper-slide h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    padding-left: 30px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .services .swiper .swiper-slide p {
-    color: #969696;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    padding-left: 30px;
-    padding-right: 20px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-  }
-  
-  .services .swiper .swiper-slide a {
-    text-decoration: none;
-    padding-left: 30px;
-    color: #016CBC;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    -webkit-transition: all .1s linear;
-    transition: all .1s linear;
-  }
-  
-  .services .swiper .swiper-slide a:hover {
-    font-size: 15px;
-    font-weight: 700;
-  }
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin: 30px auto 100px auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 
-  /* <-- SERVICES */
+.services .swiper {
+  width: 100%;
+  max-width: 1400px;
+  height: 600px;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.services .swiper .swiper-slide {
+  height: 90%;
+  background-color: rgba(166, 208, 233, 0.1);
+  border-radius: 15px;
+}
+
+.services .swiper .swiper-slide .services_img {
+  width: 100%;
+  height: 65%;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.services .swiper .swiper-slide .services_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.services .swiper .swiper-slide .services_img a {
+  padding: 0;
+}
+
+.services .swiper .swiper-slide .services_img:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  opacity: 0.5;
+}
+
+.services .swiper .swiper-slide h6 {
+  color: #0d5697;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.services .swiper .swiper-slide h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.services .swiper .swiper-slide p {
+  color: #969696;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  padding-left: 30px;
+  padding-right: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.services .swiper .swiper-slide a {
+  text-decoration: none;
+  padding-left: 30px;
+  color: #016cbc;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.services .swiper .swiper-slide a:hover {
+  font-size: 15px;
+  font-weight: 700;
+}
+/* <-- SERVICES */
+
