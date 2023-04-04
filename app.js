@@ -1,8 +1,7 @@
 // Для открывания бургер-меню (три полоски или Х)
 const nav_menu = document.querySelector(".nav_menu");
 const burger_button = document.querySelector(".nav_burger");
-// const header_slogan = document.querySelector(".header_slogan");
-// const header_logo = document.querySelector(".header_logo");
+const header_logo = document.querySelector(".logo");
 
 burger_button.addEventListener("click", function () {
   if (!burger_button.classList.contains("active")) {
@@ -10,11 +9,15 @@ burger_button.addEventListener("click", function () {
     burger_button.classList.add("active");
     // присвоить актив для menu
     nav_menu.classList.add("burger_mode");
+    if (window.screen.width < 500) {
+      header_logo.classList.add("hide");
+    }
   } else {
     // чтобы убрать актив = три полоски
     burger_button.classList.remove("active");
     // убрать актив для нав_2
     nav_menu.classList.remove("burger_mode");
+    header_logo.classList.remove("hide");
   }
 });
 
@@ -25,10 +28,12 @@ nav_links.forEach(function (link) {
   link.addEventListener("click", function () {
     burger_button.classList.remove("active");
     nav_menu.classList.remove("burger_mode");
+    header_logo.classList.remove("hide");
   });
 });
 
-if (document.location.pathname === "/") {
+console.log(document.location.pathname === "/" || document.location.pathname === "/index.html");
+if (document.location.pathname === "/" || document.location.pathname === "/index.html") {
   // SLIDER-WIPER
   const swiper = new Swiper(".swiper", {
     // Optional parameters

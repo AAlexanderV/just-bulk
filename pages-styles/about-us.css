@@ -1,6 +1,6 @@
-@import url('default.css');
+@import url("default.css");
 
-.header{
+.header {
   background-color: #016cbc;
 }
 
@@ -28,8 +28,12 @@
   animation-timing-function: ease;
 }
 @keyframes image_appearance {
-  from   {scale: 0;}
-  to {scale: 1;}
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 .about_image img {
   width: 100%;
@@ -53,7 +57,7 @@
   font-size: 42px;
 }
 
-.small_30 {
+.small_20 {
   font-size: 20px;
 }
 
@@ -68,4 +72,84 @@
   color: #016cbc;
   font-weight: 600;
   font-size: 22px;
+}
+
+/* MEDIA */
+@media (max-width: 1300px) {
+  .about_content {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .about_container {
+    margin-bottom: 30px;
+  }
+
+  .section_header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .about_content {
+    flex-direction: column-reverse;
+  }
+  .about_image {
+    width: 100%;
+  }
+  .about_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about_text * {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about_text h3 {
+    font-size: 24px;
+  }
+  .about_text h3 .JB_name {
+    font-size: 28px;
+  }
+  .small_20 {
+    font-size: 12px;
+  }
+
+  .about_text p {
+    font-size: 14px;
+  }
+  .about_text p .JB_name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about_container {
+    margin-top: 30px;
+  }
+
+  .about_text {
+    padding: 25px;
+  }
+
+  .about_text h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .about_text h3 .JB_name {
+    font-size: 22px;
+  }
+  .small_20 {
+    font-size: 12px;
+  }
+
+  .about_text p {
+    font-size: 12px;
+  }
+  .about_text p .JB_name {
+    font-size: 16px;
+  }
 }

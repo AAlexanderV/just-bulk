@@ -18,6 +18,10 @@
   font-size: 28px;
   font-weight: 700;
 }
+.logo.hide {
+  opacity: 0;
+  transition: all 0.3s linear;
+}
 
 .logo span {
   font-size: 52px;
@@ -32,18 +36,26 @@
   animation-timing-function: ease-in-out;
 }
 @keyframes logo_to_blue {
-  from   {color: #fff;}
-  to {color: #47b5f6;}
+  from {
+    color: #fff;
+  }
+  to {
+    color: #47b5f6;
+  }
 }
 
 .nav_menu {
   margin-right: 10px;
   animation-name: menu_appearance;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 @keyframes menu_appearance {
-  from {scale: 0;}
-  to {scale: 1;}
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 .nav_link {
@@ -100,11 +112,15 @@
   background-color: #ececec;
 
   animation-name: burger_menu_appearance;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
 }
 @keyframes burger_menu_appearance {
-  from {scale: 0;}
-  to {scale: 1;}
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 .nav_menu.burger_mode .nav_link {
@@ -125,11 +141,15 @@
   right: 60px;
   cursor: pointer;
   animation-name: burger_button_appearance;
-  animation-duration: .4s;
+  animation-duration: 0.4s;
 }
 @keyframes burger_button_appearance {
-  from {scale: 0;}
-  to {scale: 1;}
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 .burger_item {
@@ -197,5 +217,79 @@
   }
   .burger_item {
     display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+
+  .logo span {
+    font-size: 40px;
+  }
+
+  .nav_menu.burger_mode {
+    padding-left: 30px;
+  }
+
+  .nav_menu.burger_mode .nav_link {
+    margin-top: 50px;
+  }
+
+  .about .about_text p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    font-size: 16px;
+    margin-left: 25px;
+  }
+
+  .logo span {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav_burger {
+    right: 30px;
+  }
+
+  .nav_menu.burger_mode {
+    padding-left: 20px;
+  }
+
+  .nav_menu.burger_mode .nav_link {
+    margin: 40px auto 40px auto;
+  }
+
+  .nav_menu.burger_mode .nav_link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav_menu.burger_mode {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .logo {
+    font-size: 12px;
+  }
+
+  .logo span {
+    font-size: 22px;
+  }
+}
+
+@media (max-height: 700px) {
+  .nav_menu.burger_mode {
+    padding-top: 100px;
   }
 }

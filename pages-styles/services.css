@@ -1,57 +1,111 @@
-@import url('default.css');
+@import url("default.css");
 
-.header{
+.header {
   background-color: #016cbc;
 }
 
-
-  /* SERVICES -->*/
-.services_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 80px 0 120px 0;
+/* SERVICES -->*/
+.services_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 120px 0;
 }
 
-.service_item{
-    display: flex;
+.service_item {
+  display: flex;
 }
-.service_item.row-reverse{
-    display: flex;
-    flex-direction: row-reverse;
+.service_item.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.image_container{
-    width: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation-name: image_appearance;
+.image_container {
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: image_appearance;
   animation-duration: 1s;
   animation-timing-function: ease;
 }
 @keyframes image_appearance {
-  from   {scale: 0;}
-  to {scale: 1;}
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
-.service_text{
-    padding: 80px 40px 60px 50px;
-    width: 50%;
+.service_text {
+  padding: 80px 40px 60px 50px;
+  width: 50%;
 }
 
-.service_text h1{
-    margin-bottom: 40px;
+.service_text h1 {
+  margin-bottom: 40px;
   text-align: left;
   font-size: 36px;
   font-weight: 700;
   color: #016cbc;
 }
 
-.service_text p{
-    text-align: justify;
-    line-height: 30px;
-    margin-bottom: 20px;
-    color: #616161;
+.service_text p {
+  text-align: justify;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: #616161;
+}
+/* <-- SERVICES */
+
+/* MEDIA */
+@media (max-width: 1000px) {
+  .services_container {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }
 
-  /* <-- SERVICES */
+@media (max-width: 770px) {
+  .section_header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .service_text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px 20px 50px;
+  }
+
+  .image_container {
+    width: 100%;
+    height: 400px;
+  }
+
+  .service_item {
+    width: 100%;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .service_item.row-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 550px) {
+  .service_text {
+    padding: 40px 25px 10px 25px;
+  }
+  .service_text h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .service_text p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
