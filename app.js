@@ -32,8 +32,8 @@ nav_links.forEach(function (link) {
   });
 });
 
+// SLIDER-WIPER
 if (document.location.pathname === "/" || document.location.pathname === "/index.html") {
-  // SLIDER-WIPER
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
