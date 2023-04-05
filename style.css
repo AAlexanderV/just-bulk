@@ -1,4 +1,5 @@
-@import url('./pages-styles/default.css');
+@import url("./pages-styles/default.css");
+@import url("./node_modules/swiper/swiper-bundle.min.css");
 
 .main,
 .about,
@@ -17,7 +18,6 @@
   background-attachment: fixed;
 }
 
-
 /* ABOUT */
 .about {
   height: fit-content;
@@ -33,7 +33,7 @@
   max-width: 1200px;
 }
 
-.about_text{
+.about_text {
   margin: 30px 0;
 }
 
@@ -46,13 +46,13 @@
   color: #616161;
 }
 
-.about a{
+.about a {
   text-decoration: none;
   color: #016cbc;
   font-weight: 600;
 }
-.about a:hover{
-  opacity: .6;
+.about a:hover {
+  opacity: 0.6;
 }
 
 .about p .JB_name {
@@ -205,7 +205,6 @@
 }
 /* <-- SERVICES */
 
-
 /* MEDIA */
 @media (max-width: 650px) {
   .about .about_text p {
@@ -218,23 +217,23 @@
     font-size: 16px;
   }
 
-  .services .swiper .swiper-slide h1{
+  .services .swiper .swiper-slide h1 {
     font-size: 20px;
     padding-left: 20px;
   }
 
-  .services .swiper .swiper-slide p{
+  .services .swiper .swiper-slide p {
     font-size: 14px;
     padding-left: 20px;
   }
 
-  .services .swiper .swiper-slide a{
+  .services .swiper .swiper-slide a {
     padding-left: 20px;
   }
 }
 
 @media (max-width: 300px) {
-  .services .swiper .swiper-slide p{
+  .services .swiper .swiper-slide p {
     margin-bottom: 10px;
     padding-right: 10px;
   }

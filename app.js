@@ -32,7 +32,6 @@ nav_links.forEach(function (link) {
   });
 });
 
-console.log(document.location.pathname === "/" || document.location.pathname === "/index.html");
 if (document.location.pathname === "/" || document.location.pathname === "/index.html") {
   // SLIDER-WIPER
   const swiper = new Swiper(".swiper", {
