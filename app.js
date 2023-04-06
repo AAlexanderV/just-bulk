@@ -37,7 +37,7 @@ if (document.location.pathname === "/" || document.location.pathname === "/index
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
-    loop: true,
+    loop: false,
 
     // Default parameters
     slidesPerView: 1,

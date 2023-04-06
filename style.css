@@ -65,11 +65,13 @@
 }
 
 .about_icons {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 50px;
-  justify-content: center;
+  /* padding: 0 20px; */
+  justify-content: space-between;
 }
 
 .about_icon_item {
@@ -77,21 +79,19 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
-  margin: 0 12px;
+  margin: 20px auto 0 auto;
 }
 
 .about_icon_item .icon {
-  width: 80px;
+  width: 120px;
   aspect-ratio: 1/1;
   background-position: center;
   background-size: cover;
 }
-.icon img {
-  object-fit: cover;
-  border-radius: 50%;
-}
+
 .about_icon_item .text {
   text-align: center;
+  padding: 0 10px;
 }
 
 .about_icon_item .text span {
@@ -208,12 +208,14 @@
 @media (max-width: 650px) {
   .about .about_text p {
     font-size: 20px;
+    text-align: justify;
   }
 }
 
 @media (max-width: 420px) {
   .about .about_text p {
     font-size: 16px;
+    margin: 0 10px;
   }
 
   .services .swiper .swiper-slide h1 {
