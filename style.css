@@ -12,7 +12,7 @@
   height: 100vh;
   min-height: 500px;
 
-  background: no-repeat right url("./images//bulker-main.jpg");
+  background: no-repeat right url("./images/bulker-main.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
