@@ -122,9 +122,10 @@
 .services .swiper {
   width: 100%;
   max-width: 1400px;
-  height: 600px;
+  height: 650px;
   cursor: -webkit-grabbing;
   cursor: grabbing;
+  padding-bottom: 50px;
 }
 
 .services .swiper .swiper-slide {
@@ -202,6 +203,14 @@
   font-size: 15px;
   font-weight: 700;
 }
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  --swiper-pagination-bullet-horizontal-gap: 20px;
+}
+
 /* <-- SERVICES */
 
 /* MEDIA */
