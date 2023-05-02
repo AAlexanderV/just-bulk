@@ -121,7 +121,8 @@
 
 .services .swiper {
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
+  max-width: 2000px;
   height: 650px;
   cursor: -webkit-grabbing;
   cursor: grabbing;

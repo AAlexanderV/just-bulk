@@ -51,8 +51,12 @@ if (document.location.pathname === "/" || document.location.pathname === "/index
     },
 
     breakpoints: {
-      1000: {
+      900: {
         slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1500: {
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
